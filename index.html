@@ -393,33 +393,21 @@
    	<div class="row contact-form">
 
    		<div class="col-twelve">
-
-            <!-- form -->
-            <form name="contactForm" id="contactForm" method="POST" action="https://formspree.io/f/xvondlqk">
-      			<fieldset>
-
-                  
-                  <div class="form-field">
-	      			   <input name="email" type="email" id="email" placeholder="Email" value="" required="">
-	               </div>
-                                   
-                  <div class="form-field">
-	                 	<textarea name="message" id="message" placeholder="message" rows="10" cols="50" required=""></textarea>
-	               </div>                      
-                 <div class="form-field">
-                     <button class="submitform" type="submit">Submit</button>
-                     <div id="submit-loader">
-                        <div class="text-loader">Sending...</div>                             
-       				      <div class="s-loader">
-								  	<div class="bounce1"></div>
-								  	<div class="bounce2"></div>
-								  	<div class="bounce3"></div>
-								</div>
-							</div>
-                  </div>
-
-      			</fieldset>
-      		</form> <!-- Form End -->
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xvondlqk"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button class="submitform" type="submit">Send</button>
 
             <!-- contact-warning -->
             <div id="message-warning">            	
@@ -432,7 +420,7 @@
          </div> <!-- /col-twelve -->
    		
    	</div> <!-- /contact-form -->
-
+ 
    	<div class="row contact-info">
 
    		<div class="col tab-full">
